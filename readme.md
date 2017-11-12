@@ -3,7 +3,7 @@
 [ここ](https://git-scm.com/)からDLしてインストール  
 ## 初期設定  
 カレントディレクトリをGit管理の配下に置く  
-    git init  
+    git init
 インストール時の初期設定  
     git config user.email メールアドレス  
     git config user.name ユーザ名  
