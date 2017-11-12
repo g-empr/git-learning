@@ -5,7 +5,7 @@
 カレントディレクトリをGit管理の配下に置く  
 ```
 git init
-```  
+```
 インストール時の初期設定  
 ```
 git config user.email メールアドレス  
@@ -14,49 +14,59 @@ git config user.name ユーザ名
 各種設定の確認  
 ```
 git config --list
-```  
+```
 ## add~pushの流れ  
 カレントディレクトリのステータスを表示する  
 ```
 git status
-```  
+```
 変更ファイルを管理対象に含める  
 ```
 git add ファイル名
-```  
-addした変更点をコミットする（viなどが立ち上がる）  
+```
+管理対象にした変更点をコミットする（viなどが立ち上がる）  
 ```
 git commit
-```  
+```
 ワンラインでコミットする  
 ```
 git commit -m "ここにコメント"
-```  
+```
 リモートリポジトリに反映させる  
 ```
-git push origin master  
+git push origin master
 git push
-```  
-## リモートリポジトリを設定する（GitHub）  
-リモートリポジトリをpush/pullに設定する  
 ```
-git remote add origin https://github.com/ユーザ名/リポジトリ名.git/  
-git push --set-upstream origin master  
+## リポジトリを更新する  
+リポジトリの状態を更新する（リモートリポジトリの状態と同じにする）
+```
+git pull origin master
+git pull
+```
+リポジトリをpush/pullするリモートリポジトリを設定する  
+```
+git remote add origin https://github.com/ユーザ名/リポジトリ名.git/
+git push --set-upstream origin master
 ```
 ## ブランチを切る  
 ブランチを確認する  
 ```
 git branch
-```  
+```
 新規ブランチを作成する  
 ```
 git branch ブランチ名
-```  
+```
 ブランチを移動する  
 ```
 git checkout ブランチ名
-```  
+```
 作成と移動をまとめてやる  
 ```
 git checkout -b ブランチ名
-```  
+```
+## その他
+GitHubにあるリポジトリをそのまま持ってくる
+```
+git clone https://github.com/ユーザ名/リポジトリ名.git
+```
