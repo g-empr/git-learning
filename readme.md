@@ -14,13 +14,13 @@
 `git status`  
 変更ファイルを管理対象に含める  
 `git add ファイル名`  
-`addした変更点をコミットする（viなどが立ち上がる）`  
+管理対象にした変更点をコミットする（viなどが立ち上がる）  
 `git commit`  
 ワンラインでコミットする  
 `git commit -m "ここにコメント"`  
 リモートリポジトリに反映させる  
-`git push origin master`  
-`git push`  
+```git push origin master
+git push```  
 ## リモートリポジトリを設定する（GitHub）  
 リモートリポジトリをpush/pullに設定する  
 `git remote add リポジトリ名 https://github.com/ユーザ名/リポジトリ名.git/`  
