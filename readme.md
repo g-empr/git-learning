@@ -6,7 +6,7 @@
 ```
 git init
 ```
-インストール時の初期設定  
+ユーザ設定  
 ```
 git config user.email メールアドレス  
 git config user.name ユーザ名  
@@ -37,18 +37,18 @@ git commit -m "ここにコメント"
 git push origin master
 git push
 ```
-## リポジトリを更新する  
+## ローカルリポジトリ最新化  
 リポジトリの状態を更新する（リモートリポジトリの状態と同じにする）
 ```
 git pull origin master
 git pull
 ```
-リポジトリをpush/pullするリモートリポジトリを設定する  
+ローカルリポジトリをpush/pullするリモートリポジトリを設定する  
 ```
 git remote add origin https://github.com/ユーザ名/リポジトリ名.git/
 git push --set-upstream origin master
 ```
-## ブランチを切る  
+## ブランチ  
 ブランチを確認する  
 ```
 git branch
@@ -66,7 +66,7 @@ git checkout ブランチ名
 git checkout -b ブランチ名
 ```
 ## その他
-GitHubにあるリポジトリをそのまま持ってくる
+GitHubにあるリポジトリを持ってくる
 ```
 git clone https://github.com/ユーザ名/リポジトリ名.git
 ```
