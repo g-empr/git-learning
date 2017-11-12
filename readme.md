@@ -40,8 +40,8 @@ git push
 ## リモートリポジトリを設定する（GitHub）  
 リモートリポジトリをpush/pullに設定する  
 ```
-git remote add リポジトリ名 https://github.com/ユーザ名/リポジトリ名.git/  
-git push --set-upstream リポジトリ名 master  
+git remote add origin https://github.com/ユーザ名/リポジトリ名.git/  
+git push --set-upstream origin master  
 ```
 ## ブランチを切る  
 ブランチを確認する  
