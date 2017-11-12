@@ -1,6 +1,6 @@
 # Git使い方（入門）
 ## 導入
-[ここ](https://git-scm.com/)からDLしてインストールする。
+[ここ](https://git-scm.com/)からDLしてインストール
 ## 初期設定
 カレントディレクトリをGit管理の配下に置く
 git init
@@ -19,6 +19,12 @@ git commit
 ワンラインでコミットする
 git commit -m "ここにコメント"
 リモートリポジトリに反映させる
+git push origin master
+git push
+## リモートリポジトリを設定する（GitHub）
+リモートリポジトリをpush/pullに設定する
+git remote add リポジトリ名 https://github.com/ユーザ名/リポジトリ名.git/
+git push --set-upstream リポジトリ名 master
 ## ブランチを切る
 ブランチを確認する
 git branch
