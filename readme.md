@@ -69,7 +69,7 @@ git checkout -b ブランチ名
 ```
 git checkout -d ブランチ名
 ```
-## ブランチ 
+## マージ 
 差分を結合する（マージ）  
 ```
 git merge ブランチ名
